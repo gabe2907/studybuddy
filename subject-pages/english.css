@@ -1,0 +1,101 @@
+body.english-body {
+    background-color: #faeee0; /* Light background */
+    color: #a1570d; /* Dark text */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d18902; /* Header color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.resources-container, .exercises-container, .quizzes-container {
+    padding: 20px;
+    margin: 20px;
+}
+
+.resource-item, .exercise-item, .quiz-item {
+    background-color: #ffffff; /* White background for items */
+    border: 2px solid #d17e02; /* Border color */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* New styles for grid layout and square design for topic cards */
+.topics-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid for square cards */
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.topic-card {
+    background-color: #ffffff; /* White card background */
+    border: 2px solid #d17e02; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topic-card h3 {
+    color: #a1570d; /* Same dark color for titles */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.topic-card a {
+    color: #d17002; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto; /* Push link to bottom */
+}
+
+.topic-card:hover {
+    transform: scale(1.05); /* Scale on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.topic-card a:hover {
+    color: #a1570d; /* Darker hover effect on links */
+}
+
+footer {
+    background-color: #d17002;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
