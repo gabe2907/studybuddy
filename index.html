@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">Study Buddy</a></h1>
+            </div>
+            <div class="nav-buttons">
+                <button onclick="location.href='about-us.html'" class="extranav-btn">About Us</button>
+                <button onclick="location.href='join-us.html'" class="extranav-btn">Join Us</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Study Buddy!</h2>
+            <p>Interactive learning platform with lessons and practice for everyone.</p>
+            <a href="#subjects" class="cta-btn">Explore Subjects</a>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section id="subjects" class="subjects-section">
+        <h3>Subjects We Offer</h3>
+        <div class="subject-grid">
+            <a href="subject-pages/spanish.html" class="subject-card">Spanish</a>
+            <a href="subject-pages/english.html" class="subject-card">English</a>
+            <a href="subject-pages/mathematics.html" class="subject-card">Mathematics</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Study Buddy. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* Global Styles */
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fef8f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+  margin: 0;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #ffe6e6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: #ff6666;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff6666;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background-color: #ffd4d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  color: #ff9999;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.cta-btn {
+  background-color: #ffcccc;
+  color: #333;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #ff9999;
+}
+
+/* Subjects Section */
+.subjects-section {
+  padding: 50px 20px;
+  background-color: #fef8f5;
+  text-align: center;
+}
+
+.subjects-section h3 {
+  color: #ff6666;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.subject-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.subject-card:hover {
+  transform: translateY(-10px);
+  background-color: #ffd4d4;
+}
+
+/* Footer */
+footer {
+  background-color: #ffe6e6;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h2 {
+      font-size: 2rem;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      gap: 15px;
+  }
+}
+
+/* Style for Navigation Buttons */
+.extranav-btn {
+  background-color: #ffcccc;  /* Same color as your CTA button for consistency */
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.extranav-btn:hover {
+  background-color: #ff9999;  /* Hover effect to match your theme */
+  color: #fff;
+}
+/* Form Section Styles */
+.form-section {
+  padding: 50px 20px;
+  background-color: #fef8f5;
+  text-align: center;
+}
+
+.form-section h3 {
+  color: #ff6666;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.join-form button {
+  align-self: center;
+}
+
+/* Mission Section Styles */
+.mission-section {
+  padding: 50px 20px;
+  background-color: #fef8f5;
+  text-align: center;
+}
+
+.mission-section h3 {
+  color: #ff6666;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Team Section Styles */
+.team-section {
+  padding: 50px 20px;
+  background-color: #ffd4d4;
+  text-align: center;
+}
+
+.team-section h3 {
+  color: #ff6666;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Makes images circular */
+  margin-bottom: 10px;
+}
+
+/* Values Section Styles */
+.values-section {
+  padding: 50px 20px;
+  background-color: #fef8f5;
+  text-align: center;
+}
+
+.values-section h3 {
+  color: #ff6666;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.value-card {
+  background-color: #fa8c8c;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  color: #333;
+  transition: transform 0.3s;
+}
+
+.value-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
